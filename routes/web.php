@@ -21,9 +21,9 @@ use Illuminate\Support\Facades\Auth;
 //   return view('welcome');
 // });
 
-Route::get('/{any}', function () {
-  return view('welcome');
-})->where('any', '.*');
+// Route::get('/{any}', function () {
+//   return view('welcome');
+// })->where('any', '.*');
 Route::get('/user_info', 'UsersController@user_info')->name('user_info');
 
 Route::get('/reserve_page', 'ReserveController@reserve_page');
