@@ -13,16 +13,6 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-// Auth::routes();
-// middlewareで遷移先の制限
-Route::get('/home', 'HomeController@index')->name('home');
-// Route::group(['middleware' => 'auth'], function () {
-//   Route::get('/user_info', 'UsersController@user_info')->name('user_info');
-//   Route::post('/regist_user_info', 'UsersController@regist_user_info')->name('regist_user_info');
-//   //payjp
-//   Route::post('/payment', 'PaymentController@payment');
-//   Route::post('/regist_mail', 'UsersController@regist_mail')->name('regist_mail');
-// });
 
 // Route::get('/vue', function () {
 //   return view('app');
@@ -34,6 +24,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/{any}', function () {
   return view('welcome');
 })->where('any', '.*');
+Route::get('/user_info', 'UsersController@user_info')->name('user_info');
 
 Route::get('/reserve_page', 'ReserveController@reserve_page');
 Route::post('/api', 'GooglemapController@index');
