@@ -1,0 +1,116 @@
+.howto{
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0 auto;
+    width: 60%;
+    position: relative;
+    .howto_title{
+        text-align: center;
+        margin-bottom: 50px;
+        .backgroundcharacter{
+            font-size: 100px;
+            color: $color-white;
+        }
+        .howto_titlep{
+            position: relative;
+            bottom: 65px;
+            font-size: 24px;
+            color: $color-orange;
+        }
+    }
+    .howto_01, .howto_02, .howto_03{
+        background-color: $color-white;
+        border-radius: 25px;
+        width: 350px;
+        color: $color-black1;
+        margin-bottom: 40px;
+        padding: 30px 20px;
+        position: relative;
+        h2{
+            font-size: 20px;
+            span{
+                color: green;
+            }
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 13px;
+        }
+        .howto_img{
+            width: 70px;
+            position: absolute;
+            bottom: 90px;
+            left: 300px;
+        }
+    }
+    .howto_02{
+        left: 30%;
+    }
+    .howto_03{
+        left: 60%;
+    }
+    .drone_img{
+        position: absolute;
+        width: 100px;
+    }
+    .drone_img1{
+        top: 150px;
+        left: 50%;
+    }
+    .drone_img2{
+        top: 300px;
+        left: 70%;
+    }
+    .drone_img3{
+        top: 400px;
+        left: 10%;
+    }
+    .drone_img4{
+        top: 600px;
+        left: 15%;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .hotwo{
+        .howto_01, .howto_02, .howto_03{
+            width: 250px;
+        }
+        .howto_02{
+            left: 100px!important;
+        }
+        .howto_03{
+            left: 250px!important;
+        }
+    }
+}
+@media screen and (max-width: 1150px) {
+    .hotwo{
+        .howto_02{
+            left: 100px!important;
+        }
+        .howto_03{
+            left: 250px!important;
+        }
+    }
+}
+@media screen and (max-width: 959px) {
+    /* 959px以下に適用されるCSS（タブレット用） */
+    .hotwo{
+        .howto_02{
+            left: 0;
+        }
+        .howto_03{
+            left: 0;
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    /* 480px以下に適用されるCSS（スマホ用） */
+    .hotwo{
+        .howto_02{
+            left: 0;
+        }
+        .howto_03{
+            left: 0
+        }
+    }
+}

@@ -1,0 +1,61 @@
+.home_question{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0 auto;
+    background-color: $color-white;
+    border-radius: 100px;
+    width: 80%;
+    color: $color-black1;
+    background-color: $color-white;
+    margin-bottom: 120px;
+    h2{
+        text-align: center;
+        font-size: 4vh;
+        font-weight: bold;
+        line-height: 52px;
+        margin-bottom: 100px;
+    }
+    .questions{
+        width: 70%;
+        margin: 0 auto;
+        border-bottom: 1px solid #BBBBBB;
+        .question_text{
+            font-size:14px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            z-index: 1;
+        }
+        .answer_text{
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 26px;
+            margin-bottom: 50px;
+            z-index: 1;
+        }
+        img{
+            position: relative;
+            top: 9px;
+            margin-right: 10px;
+            z-index: auto;
+            width: 40px;
+        }
+    }
+
+}
+.question_image{
+    z-index: 1;
+}
+@media screen and (max-width: 1250px) {
+.home_question{
+    .questions{
+    }
+}
+}
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+}
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+}

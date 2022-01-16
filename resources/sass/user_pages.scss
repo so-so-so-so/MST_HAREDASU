@@ -1,0 +1,298 @@
+.user-page-wrap {
+    width: 80%;
+    min-width: max-content;
+    margin: 8% auto;
+    .content-wrap {
+        .title-block {
+            .title {
+                color: $color-gray;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 52px;
+                padding-bottom: 32px;
+                border-bottom: 1px solid $color-gray;
+                margin-bottom: 48px;
+            }
+        }
+        .main-block {
+            display: flex;
+            .tabs {
+                width: max-content;
+                .tab {
+                    color: $color-gray;
+                    width: max-content;
+                    font-size: 18px;
+                    line-height: 26px;
+                    margin-bottom: 32px;
+                    &:nth-child(4) {
+                        margin-bottom: 0;
+                    }
+                }
+                .tab:hover{
+                    cursor: pointer;
+                }
+                //tabsに上書きで選択時のフォント変化用
+                .selected {
+                    font-weight: 500;
+                }
+                .logout-button {
+                    margin-top: 32px;
+                }
+                .logout-button:hover {
+                    filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.25));
+                }
+            }
+            .screen {
+              flex-grow: 1;
+                //pagecomponent表示領域
+                //UserInfo,Password
+                .user-info-wrap, .password-wrap, .payment-wrap{
+                    width: max-content;
+                    margin: 0 auto;
+                }
+                .payment-wrap{
+                    color: $color-gray;
+                }
+            }
+        }
+    }
+}
+
+//RHistory
+.user-page-wrap {
+    .content-wrap {
+        .main-block {
+            .screen {
+                //pagecomponent表示領域
+                .reserve-list-wrap {
+                    //予約一覧のとき表示されるwrap
+                    margin-left: 30px;
+                    .reserve {
+                        color: $color-gray;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 30px;
+                        p {
+                            color: $color-gray;
+                            font-size: 18px;
+                            line-height: 26px;
+                            width: max-content;
+                        }
+                        p:nth-child(1){
+                            //////
+                            width: 250px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            //////
+                        }
+                    }
+                }
+                .reserve-detail-wrap {
+                    //予約詳細のとき表示されるwrap
+                    margin-left: 20px;
+                    .content-wrap {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        margin-bottom: 55px;
+                        .info-wrap {
+                            width: 632px;
+                            margin-right: 16px;
+                            padding: 32px;
+                            border: 1px solid #d2d2d2;
+                            border-radius: 8px;
+                            .info-title {
+                                color: $color-gray;
+                                font-weight: bold;
+                                font-size: 24px;
+                                line-height: 34px;
+                                margin-bottom: 32px;
+                            }
+                            #map {
+                                width: 100%;
+                                height: 280px;
+                                margin-bottom: 32px;
+                                pointer-events: none;
+                            }
+                            .info-contents {
+                                display: flex;
+                                margin-bottom: 25px;
+                                p {
+                                    color: $color-gray;
+                                    font-size: 18px;
+                                    line-height: 26px;
+                                }
+                                p:nth-child(2) {
+                                    margin-left: 48px;
+                                }
+                            }
+                        }
+                        .others-wrap {
+                            width: 400px;
+                            .cost-wrap {
+                                color: $color-gray;
+                                width: calc(100% - 36px);
+                                padding: 32px 16px;
+                                border: 1px solid #d2d2d2;
+                                border-radius: 8px;
+                                margin-bottom: 32px;
+                                .cost-title {
+                                    color: $color-gray;
+                                    font-weight: bold;
+                                    font-size: 24px;
+                                    line-height: 34px;
+                                    margin-bottom: 32px;
+                                }
+                                .cost-contents {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    margin-bottom: 9px;
+                                    p {
+                                        color: $color-gray;
+                                        font-size: 18px;
+                                        line-height: 26px;
+                                    }
+                                }
+                                .cost-border {
+                                    margin-top: 100px;
+                                    background: #a7a7a7;
+                                    height: 1px;
+                                    margin-bottom: 16px;
+                                    width: 100%;
+                                }
+                                .total {
+                                    font-size: 18px;
+                                    line-height: 26px;
+                                }
+                            }
+                            .card-wrap {
+                                width: calc(100% - 36px);
+                                padding: 27px 16px;
+                                border: 1px solid #d2d2d2;
+                                border-radius: 8px;
+                                .card-contents {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    a {
+                                        text-decoration: none;
+                                        color: $color-blue;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .btn-wrap {
+                        width: 100%;
+                        display: flex;
+                        .danger {
+                            background-color: $color-red;
+                            color: $color-white;
+                        }
+                        button:hover {
+                            filter: drop-shadow(
+                                2px 2px 6px rgba(0, 0, 0, 0.25)
+                            );
+                        }
+                    }
+                    .single{
+                        justify-content: center;
+                    }
+                    .double{
+                        justify-content: space-between;
+                    }
+                    .modal {
+                        &.modal-overlay {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            position: fixed;
+                            z-index: 30;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: rgba(0, 0, 0, 0.35);
+                        }
+                        &-window {
+                            background: $color-white;
+                            border-radius: 16px;
+                            overflow: hidden;
+                            padding: 50px 60px;
+                        }
+                        &-title-block {
+                            color: $color-gray;
+                            text-align: center;
+                            .title {
+                                font-size: 32px;
+                                line-height: 40px;
+                                margin-bottom: 10px;
+                            }
+                            .introduction {
+                                font-size: 24px;
+                                line-height: 30px;
+                            }
+                        }
+                        &-body {
+                            width: 60%;
+                            min-width: max-content;
+                            margin: 40px auto;
+                            .info-wrap {
+                                // #mapModal {
+                                //     width: 100%;
+                                //     height: 200px;
+                                // }
+                                .info-contents {
+                                    display: flex;
+                                    margin-bottom: 20px;
+                                    p {
+                                        color: $color-gray;
+                                        font-size: 18px;
+                                        line-height: 26px;
+                                    }
+                                    p:nth-child(2) {
+                                        margin-left: 48px;
+                                    }
+                                }
+                            }
+                        }
+                        &-btn {
+                            .danger {
+                                background-color: $color-red;
+                                color: $color-white;
+                            }
+                            button:hover {
+                                filter: drop-shadow(
+                                    2px 2px 6px rgba(0, 0, 0, 0.25)
+                                );
+                            }
+                        }
+                    }
+                    .modal-enter-active,
+                    .modal-leave-active {
+                        transition: opacity 0.4s;
+
+                        .modal-window {
+                            transition: opacity 0.4s, transform 0.4s;
+                        }
+                    }
+
+                    .modal-leave-active {
+                        transition: opacity 0.6s ease 0.4s;
+                    }
+
+                    .modal-enter,
+                    .modal-leave-to {
+                        opacity: 0;
+
+                        .modal-window {
+                            opacity: 0;
+                            transform: translateY(-20px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

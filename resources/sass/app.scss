@@ -1,0 +1,68 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap");
+// Variables
+@import "variables";
+
+// //destyle.css
+@import "./destyle.css";
+
+//vuetify
+@import "~vuetify/dist/vuetify.min.css";
+
+// $color-orange : #EB8E4B;
+$color-orange: #faae2b;
+
+//$color-gray: #767676;
+$color-gray: #00473e;
+
+$color-orange: #faae2b;
+$color-orange2: #ffae73;
+$color-gray: #00473e;
+$color-gray2: #f2f7f5;
+$color-blue: #84a6f4;
+$color-blue2: #afc7ff;
+$color-red: #ff1a1a;
+$color-black: #4d4d4d;
+$color-black1: #252525;
+$color-gray2: #fafafa;
+//$color-gray2: F2F7F5;
+
+$color-blue: #84a6f4;
+
+// $color-red : #F48484;
+$color-red: #ff1a1a;
+
+$color-black: #252525;
+$color-black1: #4d4d4d;
+$color-white: #fff;
+
+/*共通部分?*/
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    font-style: normal;
+    letter-spacing: 0.01em;
+}
+
+@import "./header.scss";
+@import "./button.scss";
+@import "./form.scss";
+@import "./home.scss";
+@import "./situation.scss";
+@import "./question.scss";
+@import "./pages.scss";
+@import "./home_main.scss";
+@import "./home_business.scss";
+@import "./home_sonohi.scss";
+@import "./howto.scss";
+
+@import './header.scss';
+@import './button.scss';
+@import './form.scss';
+@import './home.scss';
+@import './situation.scss';
+@import './question.scss';
+@import './pages.scss';
+@import './user_pages.scss'

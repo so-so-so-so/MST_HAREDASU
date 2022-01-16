@@ -1,0 +1,90 @@
+.mainvisual{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    height: 600px;
+    .mainvisual_title{
+        margin-top: 100px;
+        color: $color-black1;
+        h2{
+            background-color: $color-white;
+            font-size: 48px;
+            margin-bottom: 32px;
+            padding: 8px;
+            font-weight: 900;
+            display: inline-block;
+        }
+        .mainvisual_button{
+            border-radius: 11px;
+            background-color: $color-orange;
+            width: 390px;
+            height: 64px;
+            text-align: center;
+            size: 24px;
+            color: $color-white;
+            line-height: 26px;
+            font-weight: 700;
+            a{
+                padding: 20px;
+                font-size: 24px;
+                display: block;
+            }
+        }
+        .mainvisual_button:hover{
+            filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.25));
+        }
+        .mainvisual_button:active{
+            .button_chara{
+                opacity: 0.55;
+            }
+        }
+    }
+    .mainvisual_img_div{
+        width: 700px;
+    }
+    .mainvisual_img{
+        position: absolute;
+        top: 12%;
+        right: 10%;
+        float: right;
+        width: 700px;
+        z-index: 10;
+    }
+}
+@media screen and (max-width: 1375px) {
+    .mainvisual{
+        .mainvisual_img_div{
+            width:500px;
+        }
+        .mainvisual_img{
+            width: 500px;
+        }
+        .mainvisual_title{
+            h2{
+                font-size: 45px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1250px) {
+    .mainvisual{
+        .mainvisual_img_div{
+            width:500px;
+        }
+        .mainvisual_img{
+            width: 500px;
+        }
+        .mainvisual_title{
+            h2{
+                font-size: 45px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+}
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+}

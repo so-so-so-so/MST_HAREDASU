@@ -1,0 +1,95 @@
+.situation_wrap {
+    font-family: "Noto Sans JP", sans-serif;
+    margin: 0 auto;
+    background-color: $color-white;
+    border-radius: 100px;
+    width: 80%;
+    color: $color-black1;
+    background-color: $color-white;
+    margin-bottom: 120px;
+    .situation_title {
+        text-align: center;
+        p {
+            font-size: 14px;
+            color: $color-orange;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+            color: $color-black1;
+        }
+        padding-top: 100px;
+        margin-bottom: 110px;
+    }
+    .situation_flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .flex_group1,
+    .flex_group2 {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        display: flex;
+        width: 90%;
+        margin-bottom: 100px;
+    }
+    .flex_group1 {
+        margin-bottom: 100px;
+    }
+    .situation_group1,
+    .situation_group2 {
+        margin-top: 70px;
+        h3 {
+            font-size: 21px;
+            margin-bottom: 32px;
+            color: $color-orange;
+            font-weight: 700;
+        }
+        p {
+            width: 317px;
+            font-size: 14px;
+            letter-spacing: 0.01em;
+            line-height: 30px;
+        }
+        a {
+            color: $color-blue;
+            text-decoration: underline;
+        }
+    }
+    .situation_group1_1,
+    .situation_group2_1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+        margin-top: 30px;
+        p {
+            width: 95px;
+            background-color: $color-orange;
+            border-radius: 40px;
+            color: $color-white;
+            padding: 0 15px;
+            margin-right: 5px;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 00.01em;
+        }
+    }
+    .situation_group2 {
+        margin-bottom: 50px;
+    }
+    .situation_image1,
+    .situation_image2 {
+        width: 55vh;
+    }
+}
+@media screen and (max-width: 480px) {
+    /* 480px以下に適用されるCSS（スマホ用） */
+}
+@media screen and (max-width: 959px) {
+    /* 959px以下に適用されるCSS（タブレット用） */
+}

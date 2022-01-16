@@ -1,0 +1,100 @@
+.pages-wrap {
+    margin: 8% 0;
+    .content-wrap {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+        .gray {
+            color: $color-gray;
+        }
+        .blue {
+            color: $color-blue;
+        }
+        .black {
+            color: $color-black1;
+        }
+
+        .title-block {
+            text-align: center;
+            margin-bottom: 64px;
+            .title {
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 52px;
+                margin-bottom: 32px;
+            }
+            .introduction {
+                font-size: 24px;
+                line-height: 35px;
+            }
+        }
+        .form-block {
+            .form {
+                margin-bottom: 32px;
+            }
+            .remember-block {
+                height: 24px;
+                margin: 30px 0;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                display: flex;
+                justify-content: space-between;
+            }
+            .button {
+                margin-bottom: 32px;
+            }
+
+            .others-block {
+                text-align: center;
+                p {
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-bottom: 32px;
+                }
+                a {
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+}
+
+//login
+.login-wrap {
+    // margin: 8% 0;
+    .content-wrap {
+        .form-block {
+            .form {
+                &:nth-child(2) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+//userRegist1
+.regist1-wrap {
+    .content-wrap {
+        .form-block {
+            .form {
+                &:nth-child(1) {
+                    margin-bottom: 64px;
+                }
+            }
+        }
+    }
+}
+
+//userRegist2
+.regist2-wrap {
+    .content-wrap {
+        .title-block {
+          margin-bottom: 32px;
+        }
+    }
+}
