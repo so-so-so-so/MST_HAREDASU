@@ -26,6 +26,7 @@ class AppServiceProvider extends ServiceProvider
    */
   public function boot()
   {
+    Schema::defaultStringLength(191);
     //
     Validator::extend('kana', function ($attribute, $value, $parameters, $validator) {
       return preg_match('/[ァ-ヴー]+/u', $value);
